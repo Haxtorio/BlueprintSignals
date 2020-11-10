@@ -21,4 +21,6 @@ If you encounter a bug or have a suggestion, please [submit an issue on github](
 
 ## Credits  
   - deniwiaid (author of BlueprintExtensions)  
-    I ripped a lot of the code for this mod from bpex and learned from the rest.
+    I ripped a lot of the code for this mod from bpex and learned from the rest.  
+  - smartguy1196 (random github programmer)  
+    Helped patch blueprint book bug and update to 1.0
