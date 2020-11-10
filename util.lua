@@ -8,8 +8,9 @@ function Util.get_blueprint(bp)
         return nil
     end
     if bp.is_blueprint_book and bp.active_index then
-        log(#bp.get_inventory(defines.inventory.item_main))
-        log(bp.active_index)
+        -- SMARTGUY1196: ACTIVE_INDEX BUG: ACTIVE_INDEX IS STRANGELY 1 WHEN A NEW BOOK WITH WITH NO BLUEPRINTS IN IT IS CREATED.
+        -- log(#bp.get_inventory(defines.inventory.item_main))
+        -- log(bp.active_index)
         if bp.active_index <= #bp.get_inventory(defines.inventory.item_main) then
             return Util.get_blueprint(bp.get_inventory(defines.inventory.item_main)[bp.active_index])
         end
